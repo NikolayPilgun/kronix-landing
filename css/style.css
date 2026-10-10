@@ -1,0 +1,77 @@
+/* ========================
+1. CSS Переменные
+========================== */
+:root {
+  /* Цветовая палитра */
+  --color-bg-main: #0b0b0b; /* Основной темный фон */
+  --color-bg-card: #151515; /* Фон для карточек и плашек */
+  --color-accent: #b9ff66; /* Неоновый Зеленый */
+  --color-accent-hover: #9ee64d; /* Чуть темнее для ховера кнопок */
+
+  --color-text-main: #ffffff; /* Основной белый цвет */
+  --color-text-muted: #a1a1a1; /* Серый цвет для описания */
+  --color-border: #2a2a2a; /* Цвет границ и линий */
+
+  /* Типографика */
+  --font-family: 'Inter', sans-serif;
+
+  /* Контейнер и отступы */
+  --container-width: 1200px;
+  --container-padding: 20px;
+  --section-spacing: 120px; /* Расстояния между большими блоками */
+  --border-radius: 12px;
+}
+/* ========================
+2. Сброс стилей
+========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth; /* Плавный скролл для якорных ссылок */
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Делает шрифты более гладкими на MacOS */
+}
+
+/* Базовые элементы */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+/* ========================
+3. Утилиты
+========================== */
+/* Ограничитель ширины контента по центру */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  width: 100%;
+}
