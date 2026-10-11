@@ -15,6 +15,55 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Здесь мы будем писать код секция за секцией -->
+    <!-- Header (Шапка) -->
+    <header class="header">
+      <div class="container header__container">
+        <!-- Логотип -->
+        <a href="#" class="header__logo" aria-label="Kronix - on main page">Kro<span>nix</span></a>
+        <!-- Основная навигация -->
+        <nav class="header__nav" aria-label="Main Navigation">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#process" class="header__link">Process</a>
+            </li>
+            <li class="header__item">
+              <a href="#benefits" class="header__link">Benefits</a>
+            </li>
+            <li class="header__item">
+              <a href="#services" class="header__link">Services</a>
+            </li>
+            <li class="header__item">
+              <a href="#portfolio" class="header__link">Portfolio</a>
+            </li>
+            <li class="header__item">
+              <a href="#faq" class="header__link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Кнопка действия -->
+        <a href="#pricing" class="btn btn--accent header__cta">Get Started</a>
+      </div>
+    </header>
+    <!-- Hero section -->
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <!-- Декоративные звезды на фоне -->
+        <span class="hero__star hero__star--top-right" aria-hidden="true">✦</span>
+        <span class="hero__star hero__star--left" aria-hidden="true">✦</span>
+        <span class="hero__star hero__star--bottom-right" aria-hidden="true">✦</span>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Bringing Your <br />Dream Into <span class="hero__title-accent">Reality</span>
+          </h1>
+          <p class="hero__subtitle">
+            We increase revenue and ensure sustainable long-term growth<br
+              class="hero__br-desktop"
+            />
+            for your business through powerful Webflow websites.
+          </p>
+          <a href="#contact" class="btn btn--accent hero__cta">Book A Meeting</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
