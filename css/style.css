@@ -245,3 +245,82 @@ button {
     font-size: 1.8rem;
   }
 }
+/* ========================
+6. Brands Section
+========================== */
+.brands {
+  padding-bottom: 90px;
+}
+.brands__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.brands__line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: var(--color-accent);
+}
+.brands__title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+.brands__bar {
+  background-color: #161817;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 24px 40px;
+}
+.brands__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.brands__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-main);
+  opacity: 0.75;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  cursor: default;
+}
+.brands__item:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+.brands__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.brands__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+@media (max-width: 768px) {
+  .brands {
+    padding-bottom: 60px;
+  }
+  .brands__line {
+    max-width: 50px;
+  }
+  .brands__bar {
+    padding: 20px;
+  }
+  .brands__list {
+    justify-content: center;
+    gap: 28px 36px;
+  }
+}
