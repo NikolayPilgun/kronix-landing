@@ -557,3 +557,63 @@ button {
 .works__load-btn:hover {
   background-color: #b6afaf;
 }
+/* ========================
+11. Benefits section
+========================== */
+.benefits {
+  padding: 100px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.benefits__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 70px;
+}
+.benefits__title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.benefits__desc {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+}
+.benefit-card__icon {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+.benefit-card__title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.benefit-card__text {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+@media (max-width: 1024px) {
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .benefits__top {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+}
